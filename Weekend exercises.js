@@ -4,13 +4,13 @@
 
 // EX 1.1  -- Yes or No
 
-// function boolToString(bool){
+function boolToString(bool){
 
-//    const str =  bool === true ? 'Yes' :  'No';
-//    return str;
+   const str =  bool === true ? 'Yes' : bool == false ?  'No': `Please put true or false only as an argument.`;
+   return str;
 
-// }
-// console.log(boolToString(true));
+}
+console.log(boolToString(true));
 
 
 
