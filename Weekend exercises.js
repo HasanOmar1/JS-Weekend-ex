@@ -348,13 +348,13 @@
 
 // second solution :
 
-const isIsogram = str => 
-    new Set(str.toLowerCase()).size === str.length  // new Set checks if there is a unique character [ 2 of the same characters]
-                                                    // .size returns the number of unique elements in a Set object.
+// const isIsogram = str => 
+//     new Set(str.toLowerCase()).size === str.length  // new Set checks if there is a unique character [ 2 of the same characters]
+//                                                     // .size returns the number of unique elements in a Set object.
 
 
 
 
-console.log(isIsogram('Dermatoglyphics'));
+// console.log(isIsogram('Dermatoglyphics'));
 
 
