@@ -22,19 +22,17 @@
 
 // function sumOfLowestNumbers(arr){
 
-//     const sorting = arr.sort((a,b) => a - b);
-
-//     const onlyNumbers = arr.filter(element => typeof element === 'number');
+//     const sorting = arr.sort((a,b) => a - b); // sorts numbers
 
 //     if(arr.length < 4 ){
 //         return `Please put more than 3 numbers in the array`;
 //     }
-//     if(sorting[0] < 0 ){
+//     if(sorting[0] < 0 ){ // [0] = lowest number because i already sorted it
 //         return `Only Positive numbers allowed!`
 //     }
 
 //     for(let i = 0 ; i < arr.length ; i++){
-//         if(arr[i] % 1 !== 0)
+//         if(arr[i] % 1 !== 0) // checks if there are floats
 //         return `Only integers allowed!` 
 //     }
 
@@ -59,7 +57,7 @@
 
 // function findNextSquare(n){
 
-// if (Math.sqrt(n) % 1 === 0){
+// if (Math.sqrt(n) % 1 === 0){ // checks if its an integer
 // return (Math.sqrt(n) + 1) ** 2 // ** = power operator , ( Math.sqrt(121) = 11 + 1 = 12 ^ 2 = 144;
 // }
 // else {
@@ -153,7 +151,7 @@
 //     return  value1 / value2;
 // }
 // else {
-//     return (`Please use only one of these operators : '+' , '-' , '*' , '/' .`)
+//     return (`Please use only one of these operators : '+' , '-' , '*' , '/' `)
 // }
 // }
 // console.log(basicOp('+' , 7 , 4))
@@ -207,17 +205,17 @@
 
 // function toCamelCase(str){
 
-//     str = str.split('');
+//     str = str.split(''); // makes it an array
 
 //     return str.map(function(dash, nextChar){
 
 //       if(dash === '-' || dash === '_'){
-//         dash = str[nextChar+1].toUpperCase();
-//         str.splice(nextChar+1, 1);
+//         dash = str[nextChar + 1].toUpperCase();
+//         str.splice(nextChar + 1, 1);
 //       }
 
 //       return dash;
-//     }).join('');
+//     }).join(''); // brings it back to string
 //   }
 //   console.log(toCamelCase("The-stealth-warrior"))
 
@@ -228,8 +226,8 @@
 
 // function initials(str){
 
-// const newArray = str.split(" ")
-// return (newArray[0][0] + "." + newArray[1][0]).toUpperCase()
+// const array = str.split(" ") // makes it an array
+// return (array[0][0] + "." + array[1][0]).toUpperCase()
 // }
 
 // console.log(initials('Sam Harris'))
@@ -323,29 +321,29 @@
 // Ex6.4 - isogram
 
 
-function isIsogram(str){
+// function isIsogram(str){
    
     
-  if (str.isEmpty) {  //if empty return true.
-    return true;
-  }
-   else {
-    str = str.toLowerCase();  // All lower case.
-  }
+//   if (str.isEmpty) {  //if empty return true.
+//     return true;
+//   }
+//    else {
+//     str = str.toLowerCase();  // All lower case.
+//   }
 
-  let array = str.split('');  //splits string into array of individual characters. 
-  let sortedArr = array.slice().sort(); // copies array but sorts characters alphabetically
+//   let array = str.split('');  //splits string into array of individual characters. 
+//   let sortedArr = array.slice().sort(); // copies array but sorts characters alphabetically
 
-  for (let i = 0; i < array.length; i++) {
-    if (sortedArr[i + 1] === sortedArr[i]) {  //if duplicate is found return false.
+//   for (let i = 0; i < array.length; i++) {
+//     if (sortedArr[i + 1] === sortedArr[i]) {  //if duplicate is found return false.
 
-      return false;
-    }
-  }
-  return true;  //else return true
+//       return false;
+//     }
+//   }
+//   return true;  //else return true
  
-}
+// }
 
-console.log(isIsogram('Dermatoglyphics'));
+// console.log(isIsogram('Dermatoglyphics'));
 
 
